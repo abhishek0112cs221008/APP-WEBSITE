@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhishek Apps</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">a b h i s h e k</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#apps" data-translate="apps">Apps</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" data-translate="about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-translate="contact">Contact</a></li>
+          <li class="nav-item mx-2">
+            <button class="btn btn-sm btn-outline-dark" id="themeToggle">🌙</button>
+          </li>
+          <li class="nav-item">
+            <select id="langSwitch" class="form-select form-select-sm bg-white text-dark border-0">
+              <option value="en">EN</option>
+              <option value="hi">हिंदी</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero text-center py-5 mt-5" data-aos="fade-up">
+    <div class="container">
+      <h1 class="display-4" data-translate="welcome">Welcome to Abhishek Apps</h1>
+      <p class="lead" data-translate="description">Explore our innovative and useful apps on Indus Appstore!</p>
+    </div>
+  </header>
+
+  <!-- Apps Section -->
+  <section id="apps" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-translate="our_apps">Our Apps</h2>
+      <div class="row">
+        <!-- App Card Example -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Finance Tracker</h5>
+              <p class="card-text" data-translate="finance_desc">Track your expenses and savings with ease.</p>
+                <a href="https://www.indusappstore.com/apps/finance/finance-tracker/com.example.project_track_your_finance?page=details&id=com.example.project_track_your_finance" target="_blank" class="btn btn-primary" data-translate="download">Download</a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat App Cards as needed -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Torch</h5>
+                <p class="card-text" data-translate="torch_desc">A smart torch app with advanced features for your convenience.</p>
+                <a href="https://www.indusappstore.com/apps/tools/torch/com.example.torch?page=details&id=com.example.torch" target="_blank" class="btn btn-primary" data-translate="download">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------- -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-translate="about_us">About Us</h2>
+      <p class="text-center" data-translate="about_desc">
+        We are passionate developers creating modern apps tailored to your daily needs and productivity.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-translate="contact_us">Contact Us</h2>
+      <form action="/contact" method="POST" class="mx-auto" style="max-width: 600px;" data-aos="fade-right">
+        <div class="mb-3">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required/>
+        </div>
+        <div class="mb-3">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" required/>
+        </div>
+        <div class="mb-3">
+          <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success w-100" data-translate="send_msg">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-dark text-center py-4">
+    <div class="container">
+      <p class="mb-1">© 2025 Abhishek Apps. All rights reserved.</p>
+      <small>🌐 Powered by Indus Appstore</small>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
