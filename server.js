@@ -28,10 +28,10 @@ app.post("/contact", async (req, res) => {
 
   try {
     await transporter.sendMail(mailOptions);
-    res.send(`<h3>Thanks, ${name}! Your message has been sent to us.</h3>`);
+    res.json({ success: true, message: `Thanks, ${name}! Your message has been sent to us.` });
   } catch (error) {
     console.error("Error sending email:", error);
-    res.send("<h3>Sorry, there was an error sending your message.</h3>");
+    res.json({ success: false, message: "Sorry, there was an error sending your message." });
   }
 });
 
