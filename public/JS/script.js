@@ -1,6 +1,6 @@
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function () {
-    const themeToggle = document.getElementById('theme-toggle');
+    const themeToggle = document.getElementById('themeToggle');
     const langSwitch = document.getElementById('lang-switch');
   
     // Initialize AOS animations
