@@ -33,6 +33,7 @@ app.post("/contact", async (req, res) => {
     console.error("Error sending email:", error);
     res.json({ success: false, message: "Sorry, there was an error sending your message." });
   }
+  
 });
 
 app.listen(PORT, () => {
